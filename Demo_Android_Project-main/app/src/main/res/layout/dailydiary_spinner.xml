@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff123456"
+    android:theme="@android:style/Theme.Holo"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:background="#ff123456"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setupTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff234567"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:text="@string/daily_diary_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="@string/day_of_the_week_log"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/paramLab"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="/5"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="@string/input_type"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/paramLa"
+                    android:layout_width="154dp"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/spinner_list"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/table"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/paramLabelOrderOfControl"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingRight="5dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/overall_mood"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/paramOrderOfControl"
+                    android:layout_width="144dp"
+                    android:layout_weight="1"
+                    android:entries="@array/moods"
+                    android:gravity="left"
+                    android:visibility="visible"
+                    android:spinnerMode="dropdown"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/paramLabelGain"
+                    android:layout_width="143dp"
+                    android:gravity="left"
+                    android:paddingRight="5dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/mindset"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/paramGain"
+                    android:layout_weight="1"
+                    android:entries="@array/mind"
+                    android:gravity="left"
+                    android:spinnerMode="dropdown"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/paramLabelPathType"
+                    android:gravity="left"
+                    android:paddingRight="5dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/type_of_exercise"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Spinner
+                    android:id="@+id/paramPathType"
+                    android:layout_weight="1"
+                    android:entries="@array/ex"
+                    android:gravity="left"
+                    android:spinnerMode="dropdown"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/paramLabelPathWidth"
+                    android:layout_width="192dp"
+                    android:gravity="left"
+                    android:paddingTop="16dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/mindfulness_or_meditation"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/paramPathWidth"
+                    android:layout_weight="1"
+                    android:entries="@array/med"
+                    android:gravity="left"
+                    android:spinnerMode="dropdown"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/NumLapsPathWidth"
+                    android:gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="@string/screen_time"
+                    android:paddingTop="16dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Spinner
+                    android:id="@+id/NumLapsWidth"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:entries="@array/screen"
+                    android:spinnerMode="dropdown"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="128dp"
+                android:layout_height="45dp"
+                android:id="@+id/next"
+                android:enabled="false"
+                android:onClick="onNextButtonClick"
+                android:layout_marginTop="12dp"
+                android:text="@string/next">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

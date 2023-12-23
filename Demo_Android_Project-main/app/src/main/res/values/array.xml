@@ -1,0 +1,44 @@
+<resources>
+    <array name="moods">
+        <item>Select...</item>
+        <item>Happy</item>
+        <item>Content</item>
+        <item>Neutral</item>
+        <item>Sad</item>
+        <item>Stressed</item>
+        <item>Anxious</item>
+        <item>Other</item>
+    </array>
+    <array name="mind">
+        <item>Select...</item>
+        <item>Brain Fog</item>
+        <item>Stressed</item>
+        <item>Focused</item>
+        <item>Distracted</item>
+        <item>Calm</item>
+        <item>Motivated</item>
+        <item>Unproductive</item>
+    </array>
+    <array name="ex">
+        <item>Select...</item>
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Cycling</item>
+        <item>Weight Lifting</item>
+        <item>Yoga</item>
+        <item>Sports</item>
+        <item>Other</item>
+    </array>
+    <array name="med">
+        <item>Select...</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+    <array name="screen">
+        <item>Select...</item>
+        <item>1 Hour</item>
+        <item>2-3 Hours</item>
+        <item>4-6 Hours</item>
+        <item>7+ hours</item>
+    </array>
+</resources>

@@ -1,0 +1,96 @@
+<!-- activity_my_account.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#F8EEEC"
+    tools:context=".MyAccountActivity">
+
+    <!-- Application Information CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAppInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Display information about the application -->
+            <TextView
+                android:id="@+id/textViewAppInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application Information"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Add more TextViews or other UI components as needed for application information -->
+            <TextView
+                android:id="@+id/textViewVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version: 1.0"
+                android:layout_below="@+id/textViewAppInfo"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewDeveloper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer: Your Company"
+                android:layout_below="@+id/textViewVersion"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- User Information CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_below="@+id/cardViewAppInfo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Display user-specific information -->
+            <TextView
+                android:id="@+id/textViewUserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Information"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Add more TextViews or other UI components as needed for user information -->
+            <TextView
+                android:id="@+id/textViewUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username: JohnDoe"
+                android:layout_below="@+id/textViewUserInfo"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: john.doe@example.com"
+                android:layout_below="@+id/textViewUserName"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
