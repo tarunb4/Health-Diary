@@ -20,3 +20,6 @@ With an intuitive interface and smooth functionality, users can track daily acti
 - **Development Environment:** Android Studio 🛠  
 - **Database:** SQLite 💾 (local storage for user data)  
 - **Additional Tools:** Android SDK, Gradle, Firebase (optional for cloud integration)  
+
+
+## Demo - https://www.youtube.com/watch?v=WSWbnCL37fk
